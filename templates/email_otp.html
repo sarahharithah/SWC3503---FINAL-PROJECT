@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email OTP Verification</title>
+</head>
+<body>
+    <h1>Email OTP Verification</h1>
+    <p>An OTP has been sent to your email. Please enter it below:</p>
+    <form action="{{ url_for('verify_email_otp') }}" method="post">
+        <label>Enter OTP:</label>
+        <input type="text" name="otp" required>
+        <button type="submit">Verify OTP</button>
+    </form>
+</body>
+</html>

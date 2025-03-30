@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Members List</title>
+</head>
+<body>
+    <h1>Members List</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Membership Status</th>
+            <th>Classes</th>
+            <th>Register Class</th>
+            <th>Delete</th>
+        </tr>
+        {% for member in members %}
+        <tr>
+            <td>{{ member[1] }}</td>
+            <td>{{ member[2] }}</td>
+            <td><a href="#">View Classes</a></td>
+            <td><a href="#">Register Class</a></td>
+            <td><button>Delete</button></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
